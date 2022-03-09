@@ -452,7 +452,7 @@ void setupDisplay()
   tft.useFrameBuffer(true);
   tft.initR(INITR_GREENTAB);
   tft.setRotation(3);
-  tft.invertDisplay(true);
+  tft.invertDisplay(false);
   renderBootUpPage();
   tft.updateScreen();
   threads.addThread(displayThread);

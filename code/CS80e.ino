@@ -875,8 +875,7 @@ void updatefeet2()
 
 void updatemix()
 {
-  //  showCurrentParameterPage("Osc Mix I<>II", "   " + String(mixstr));
-  showCurrentParameterPage("Osc Mix I<>II", "   " + String(mixstr, 0) + " - " + String(mixstr2, 0));
+  showCurrentParameterPage("Osc Mix I<>II", String(mixstr));
 }
 
 void updatebrill()
@@ -1365,10 +1364,6 @@ void updateribbonPitch()
 }
 
 
-
-
-
-
 void updatePatchname()
 {
   showPatchPage(String(patchNo), patchName);
@@ -1767,7 +1762,7 @@ void myControlChange(byte channel, byte control, int value)
 
     case CCdetune:
       detune = value;
-      detunestr = LINEARCENTREZERO[value / readresdivider];
+      detunestr = DETUNE[value / readresdivider];
       updatedetune();
       break;
 
@@ -1844,8 +1839,7 @@ void myControlChange(byte channel, byte control, int value)
 
     case CCmix:
       mix = value;
-      mixstr = LINEAR_NORMAL[value / readresdivider];
-      mixstr2 = LINEAR_INVERSE[value / readresdivider];
+      mixstr = MIX[value / readresdivider];
       updatemix();
       break;
 

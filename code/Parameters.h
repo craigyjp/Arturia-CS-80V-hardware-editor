@@ -150,7 +150,6 @@ float feet2 = 0;
 String feet2str = "";
 float mix = 0;
 float mixstr = 0;
-float mixstr2 = 0;
 float brill = 0;
 float brillstr = 0;
 float reso = 0;

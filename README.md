@@ -9,4 +9,4 @@ Possible to use as a universal editor with 119 CC controls for other Arturia pro
 
 MIDI in/out, USB midi
 
-Ribbon controller to be implemented in future release.
+Ribbon controller is seperate in my other repositor
